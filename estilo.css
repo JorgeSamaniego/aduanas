@@ -1,0 +1,106 @@
+body{
+   display: grid;
+   margin: auto 0; /*Normalization*/
+   background-color: rgb(96, 207, 212);
+   font-family: Arial;
+}
+
+.zone {
+   cursor: pointer;
+   color: #FFF;
+   font-size: 2.0em;
+   border-radius: 4px;
+   border: 1px solid #bbb;
+   transition: all 0.3s linear;
+}
+
+
+.box:hover {
+               transform: scale(1.1);
+      /*-webkit-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+      -moz-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+      -o-box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+      box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;*/
+   }
+
+.green{
+      background-color: rgb(1, 120, 126);
+}
+
+.sticky{
+         position: fixed;
+         top: 0;
+         width: 100%;
+}
+
+.blue{
+   background-color: rgb(81, 139, 142);
+}
+
+.yellow{
+   background-color: rgb(40, 129, 133);
+}
+
+   .main-nav {
+      display: flex;
+      list-style: none;
+      font-size: 0.7em;
+      margin: 0;
+   }
+
+   @media only screen and (max-width: 500px){
+      main-nav {
+         font-size: 0.6em;
+         padding: 0;
+      }
+   }
+
+   li{
+      padding: 20px;
+   }
+
+   a{
+      color: #f5f5f6;
+      text-decoration: none;
+   }
+
+   .push {
+      margin-left: auto;
+   }
+
+   .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90vh;
+      /*background: url(cover01.jpg)no-repeat center center;*/
+   }
+
+/*Grid System for projextos*/
+.grid-wrapper{
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+            width: 80%;
+}
+
+.box {
+      background-color: #444;
+      padding: 60px;
+      margin: 20px;
+}
+
+footer {
+         text-align: center;
+         font-size: 1.3em;
+}
+
+.covering {
+         /*padding: 10px;
+         margin:10px;*/
+         width:100%;
+         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
